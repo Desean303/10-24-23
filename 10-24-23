@@ -1,0 +1,36 @@
+def frog_jump(num):
+    for i in range(num):
+        print("jump #", i, "Ribbit")
+        
+frog_jump(5)
+
+def guess_number(target):
+    num = -1
+    while target != num:
+        num = input("guess a number")
+    if num == target:
+         print("you guessed right!")
+    elif num > target:
+        print("too high!")
+    else:
+        print("too low!")
+            
+guess_number(42)
+
+def is_vampire(age, garlic):
+    if age >1000 and garlic is false:
+        print("oh no, vampire!")
+    else:
+        print("not a vampire")
+        
+is_vampire(15, True)
+
+def rocket_launch(fuel, astronauts):
+    if astronauts*100<fuel:
+        print("lunch Successful!")
+        return "launch successful"
+    else:
+        print("insufficient fuel")
+        return "insufficient fuel"
+    
+print(rocket_launch(500,3))
